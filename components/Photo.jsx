@@ -24,20 +24,28 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className={`w-[${size}px] h-[${size}px] xl:w-[${xlSize}px] xl:h-[${xlSize}px] mix-blend-lighten absolute`}
+          style={{
+            width: size,
+            height: size,
+          }}
+          className="mix-blend-lighten absolute"
         >
           <Image
-            src="/assets/photo.png"
+            src="/assets/animate.gif"
             priority
             quality={100}
             fill
+            sizes="(max-width: 768px) 300px, 400px"
             alt=""
-            className="object-cover rounded-full" // Ensure it's circular
+            className="object-cover rounded-full"
           />
         </motion.div>
 
         <motion.svg
-          className={`w-[${size}px] xl:w-[${xlSize}px] h-[${size}px] xl:h-[${xlSize}px]`}
+          style={{
+            width: size,
+            height: size,
+          }}
           fill="transparent"
           viewBox={`0 0 ${xlSize} ${xlSize}`}
           xmlns="http://www.w3.org/2000/svg"

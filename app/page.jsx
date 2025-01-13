@@ -1,3 +1,4 @@
+
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
@@ -41,7 +42,7 @@ const Home = () => {
             </div>
           {/* photo */}
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
-            <Photo />
+            <Photo/>
           </div>
         </div>
       </div>
