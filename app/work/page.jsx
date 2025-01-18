@@ -22,43 +22,67 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
-    description: "This is the description of th project bla bla bla",
-    stack: [{ name: "Html 5" }, { name: "Css3" }, { name: "Javascript" }],
-    image: "/assets/brand.png",
+    category: "Machine Learning",
+    title: "Facial Recognition Attendance System",
+    description:
+      "A Python-based facial recognition system designed to automate attendance marking by identifying faces using advanced computer vision libraries such as OpenCV. This system ensures accurate and efficient attendance tracking for classrooms or workplaces.",
+    stack: [
+      { name: "Python" },
+      { name: "OpenCV" },
+      { name: "Machine Learning" },
+    ],
+    image: "/assets/facialreg.png",
     live: "",
-    github: "",
+    github: "https://github.com/AkindejiAfeez?tab=repositories",
+    target: "_blank",
   },
   {
     num: "02",
-    category: "full Stack",
-    title: "project 1",
-    description: "This is the description of th project bla bla bla",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/brand.png",
+    category: "Frontend",
+    title: "Admin Dashboard",
+    description:
+      "A sleek and interactive admin dashboard built with React JSX and SCSS, featuring data visualization, user management, and customizable widgets for monitoring and controlling application metrics.",
+    stack: [{ name: "React" }, { name: "JSX" }, { name: "SCSS" }],
+    image: "/assets/admin.png",
     live: "",
-    github: "",
+    github: "https://github.com/AkindejiAfeez?tab=repositories",
+    target: "_blank",
   },
   {
     num: "03",
-    category: "frontend",
-    title: "project 1",
-    description: "This is the description of th project bla bla bla",
-    stack: [{ name: "Flutter" }, { name: "Css3" }, { name: "Javascript" }],
-    image: "/assets/brand.png",
+    category: "Full Stack",
+    title: "E-commerce Website",
+    description:
+      "An e-commerce application developed using Flutter, enabling users to browse products, add items to a cart, and make secure payments. The app focuses on seamless UI/UX and integrates a robust backend for order processing.",
+    stack: [{ name: "Flutter" }, { name: "Dart" }, { name: "Firebase" }],
+    image: "/assets/tripguide.png",
     live: "",
-    github: "",
+    github: "https://github.com/AkindejiAfeez?tab=repositories",
+    target: "_blank",
   },
   {
     num: "04",
-    category: "frontend",
-    title: "project 1",
-    description: "This is the description of th project bla bla bla",
-    stack: [{ name: "Html 5" }, { name: "Css3" }, { name: "Javascript" }],
-    image: "/assets/brand.png",
+    category: "Frontend",
+    title: "Real Estate App",
+    description:
+      "A real estate application built with Flutter that allows users to explore property listings, view detailed information, and contact agents. The app delivers an intuitive experience and features search and filter functionality for convenience.",
+    stack: [{ name: "Flutter" }, { name: "Dart" }, { name: "Firebase" }],
+    image: "/assets/realestate.png",
     live: "",
-    github: "",
+    github: "https://github.com/AkindejiAfeez?tab=repositories",
+    target: "_blank",
+  },
+  {
+    num: "05",
+    category: "Frontend",
+    title: "Fitbit, Nutrition, and Home Workout Website",
+    description:
+      "A fitness-focused website built with React and Tailwind CSS that provides users with personalized workout routines, nutrition plans, and activity tracking. The platform emphasizes a modern design and easy navigation for a holistic fitness experience.",
+    stack: [{ name: "React" }, { name: "Tailwind CSS" }, { name: "APIs" }],
+    image: "/assets/ATRIUM.png",
+    live: "",
+    github: "https://github.com/AkindejiAfeez?tab=repositories",
+    target: "_blank",
   },
 ];
 
@@ -160,14 +184,9 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div
-                      className="h-[460px] relative group flex justify-center items-center bg-pink-50/20"
-                                    
-                    >
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                       {/* overlay */}
-                      <div
-                        className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"
-                      ></div>
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
                       <div className="relative w-full h-full">
                         <Image src={project.image} fill alt="" />
